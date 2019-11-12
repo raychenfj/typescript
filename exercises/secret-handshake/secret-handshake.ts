@@ -7,6 +7,26 @@ export default class HandShake {
 
   }
 
+  private _wink = () => {
+    this._commands.push('wink')
+  }
+
+  private _doubleBlink = () => {
+    this._commands.push('double blink')
+  }
+
+  private _closeYourEyes = () => {
+    this._commands.push('close your eyes')
+  }
+
+  private _jump = () => {
+    this._commands.push('jump')
+  }
+
+  private _reverse = () => {
+    this._commands.reverse()
+  }
+
   commands(): string[] {
     const commands = [this._wink, this._doubleBlink, this._closeYourEyes, this._jump, this._reverse]
 
@@ -18,25 +38,5 @@ export default class HandShake {
     }, '')
 
     return this._commands
-  }
-
-  _wink = () => {
-    this._commands.push('wink')
-  }
-
-  _doubleBlink = () => {
-    this._commands.push('double blink')
-  }
-
-  _closeYourEyes = () => {
-    this._commands.push('close your eyes')
-  }
-
-  _jump = () => {
-    this._commands.push('jump')
-  }
-
-  _reverse = () => {
-    this._commands.reverse()
   }
 }
